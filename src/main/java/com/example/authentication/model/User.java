@@ -17,10 +17,11 @@ import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 
-@Entity
-@Table
+
 @Builder
 @AllArgsConstructor
+@Entity
+@Table(name = "_user")
 public class User implements UserDetails{
 
     public User() {
